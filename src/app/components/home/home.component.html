@@ -1,0 +1,164 @@
+<div style="font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial; color:#0f172a; line-height:1.6;">
+
+  <div color="primary" style="background:linear-gradient(90deg,#0f172a,#1e293b); color:#f8fafc; padding:0 24px; height:100px; display:flex; align-items:center; justify-content:space-between;">
+    <div style="display:flex; align-items:center; gap:24px;">
+      <span style="font-weight:700; letter-spacing:0.3px;">WeWork Medicals</span>
+      <nav style="display:flex; gap:16px; align-items:center;">
+        <a href="#services" (click)="$event.preventDefault(); scrollTo('services')" style="text-decoration:none; color:#e2e8f0; font-weight:500;">Services</a>
+        <a href="#pricing" (click)="$event.preventDefault(); scrollTo('pricing')" style="text-decoration:none; color:#e2e8f0; font-weight:500;">Pricing</a>
+        <a href="#testimonials" (click)="$event.preventDefault(); scrollTo('testimonials')" style="text-decoration:none; color:#e2e8f0; font-weight:500;">Testimonials</a>
+      </nav>
+    </div>
+    <div style="display:flex; gap:12px; align-items:center;">
+      <button mat-stroked-button style="border-color:#94a3b8; color:#e2e8f0;">Sign in</button>
+      <button mat-raised-button color="accent" style="background:#22c55e; color:#0b1a0f; font-weight:600;">Get Started</button>
+    </div>
+  </div>
+
+  <section style="background:linear-gradient(180deg,#f1f5f9, #ffffff); padding:56px 16px;">
+    <mat-card style="max-width:1100px; margin:0 auto; padding:32px; border-radius:16px; box-shadow:0 10px 30px rgba(2,6,23,0.08);">
+      <div style="display:flex; flex-wrap:wrap; gap:24px; align-items:center; justify-content:space-between;">
+        <div style="flex:1 1 420px;">
+          <h1 style="margin:0 0 12px 0; font-size:40px; line-height:1.2; color:#0f172a;">
+            Health services at WeWork Medicals;
+          </h1>
+          <p style="margin:0 0 24px 0; font-size:16px; color:#334155;">
+            Comprehensive medical services tailored for coworking spaces: ensuring the health of your community.
+          </p>
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <button mat-raised-button color="primary" style="background:#0f172a; color:#f8fafc; padding:0 20px; height:44px; border-radius:8px; font-weight:600;">
+              Start free
+            </button>
+            <button mat-stroked-button style="height:44px; border-radius:8px; border-color:#cbd5e1; color:#0f172a;">
+              Book a demo
+            </button>
+          </div>
+          <p style="margin:12px 0 0 0; font-size:12px; color:#64748b;">No credit card required.</p>
+        </div>
+      </div>
+    </mat-card>
+  </section>
+
+  <section id="services" style="padding:48px 16px; background:#ffffff;">
+    <div style="max-width:1100px; margin:0 auto;">
+      <h2 style="margin:0 0 8px 0; font-size:28px; color:#0f172a;">Our Services</h2>
+      <p style="margin:0 0 24px 0; color:#475569;">Providing essential health services to support your workforce.</p>
+      <div style="display:flex; flex-wrap:wrap; gap:16px;">
+        <mat-card class="feature-card" style="flex:1 1 240px; min-width:240px; border-radius:12px; padding:20px; border:1px solid #e2e8f0;">
+          <mat-card-title style="font-size:18px; color:#0f172a; margin-bottom:6px;">Health Checkups</mat-card-title>
+          <mat-card-content style="color:#334155;">Routine health checkups for employees to ensure wellness.</mat-card-content>
+        </mat-card>
+        <mat-card class="feature-card" style="flex:1 1 240px; min-width:240px; border-radius:12px; padding:20px; border:1px solid #e2e8f0;">
+          <mat-card-title style="font-size:18px; color:#0f172a; margin-bottom:6px;">Mental Health Support</mat-card-title>
+          <mat-card-content style="color:#334155;">Counseling and mental health resources for workplace wellness.</mat-card-content>
+        </mat-card>
+        <mat-card class="feature-card" style="flex:1 1 240px; min-width:240px; border-radius:12px; padding:20px; border:1px solid #e2e8f0;">
+          <mat-card-title style="font-size:18px; color:#0f172a; margin-bottom:6px;">Nutrition Counseling</mat-card-title>
+          <mat-card-content style="color:#334155;">Personalized nutrition advice for a healthier lifestyle.</mat-card-content>
+        </mat-card>
+        <mat-card class="feature-card" style="flex:1 1 240px; min-width:240px; border-radius:12px; padding:20px; border:1px solid #e2e8f0;">
+          <mat-card-title style="font-size:18px; color:#0f172a; margin-bottom:6px;">Emergency Services</mat-card-title>
+          <mat-card-content style="color:#334155;">Quick response services for any health emergencies.</mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" style="padding:48px 16px; background:#f8fafc;">
+    <div style="max-width:1100px; margin:0 auto;">
+      <h2 style="margin:0 0 8px 0; font-size:28px; color:#0f172a;">Simple Pricing</h2>
+      <p style="margin:0 0 24px 0; color:#475569;">Transparent plans that scale with your needs.</p>
+
+      <div style="display:flex; flex-wrap:wrap; gap:16px;">
+        <mat-card style="flex:1 1 300px; min-width:280px; border:1px solid #e2e8f0; border-radius:14px; padding:20px; background:#ffffff;">
+          <mat-card-title style="font-size:18px; color:#0f172a;">Basic Plan</mat-card-title>
+          <div style="margin:6px 0 14px 0; font-size:28px; color:#0f172a;">$0<span style="font-size:14px; color:#64748b;"> / mo</span></div>
+          <ul style="padding-left:18px; margin:0 0 16px 0; color:#334155;">
+            <li>Basic health services</li>
+            <li>Email support</li>
+            <li>Community access</li>
+          </ul>
+          <button mat-stroked-button style="width:100%; border-color:#cbd5e1; color:#0f172a; height:42px;">Choose Basic</button>
+        </mat-card>
+
+        <mat-card style="flex:1 1 300px; min-width:280px; border:2px solid #0f172a; border-radius:16px; padding:22px; background:#0f172a; color:#f8fafc; transform:translateY(-4px); box-shadow:0 12px 30px rgba(2,6,23,0.15);">
+          <mat-card-title style="font-size:18px; color:#f8fafc;">Pro Plan</mat-card-title>
+          <div style="margin:6px 0 14px 0; font-size:28px; color:#f8fafc;">$29<span style="font-size:14px; color:#cbd5e1;"> / mo</span></div>
+          <ul style="padding-left:18px; margin:0 0 16px 0; color:#e2e8f0;">
+            <li>Everything in Basic</li>
+            <li>Advanced services</li>
+            <li>Priority support</li>
+          </ul>
+          <button mat-raised-button color="accent" style="width:100%; height:44px; background:#22c55e; color:#0b1a0f; font-weight:700;">Choose Pro</button>
+        </mat-card>
+
+        <mat-card style="flex:1 1 300px; min-width:280px; border:1px solid #e2e8f0; border-radius:14px; padding:20px; background:#ffffff;">
+          <mat-card-title style="font-size:18px; color:#0f172a;">Business Plan</mat-card-title>
+          <div style="margin:6px 0 14px 0; font-size:28px; color:#0f172a;">$99<span style="font-size:14px; color:#64748b;"> / mo</span></div>
+          <ul style="padding-left:18px; margin:0 0 16px 0; color:#334155;">
+            <li>Unlimited services</li>
+            <li>Team collaboration</li>
+            <li>Dedicated manager</li>
+          </ul>
+          <button mat-stroked-button style="width:100%; border-color:#cbd5e1; color:#0f172a; height:42px;">Choose Business</button>
+        </mat-card>
+      </div>
+    </div>
+  </section>
+
+  <section id="testimonials" style="padding:48px 16px; background:#ffffff;">
+    <div style="max-width:1100px; margin:0 auto;">
+      <h2 style="margin:0 0 8px 0; font-size:28px; color:#0f172a;">What People Say</h2>
+      <p style="margin:0 0 24px 0; color:#475569;">Feedback from our satisfied clients.</p>
+
+      <div style="display:flex; flex-wrap:wrap; gap:16px;">
+        <mat-card style="flex:1 1 320px; min-width:280px; border:1px solid #e2e8f0; border-radius:12px; padding:18px;">
+          <p style="margin:0 0 8px 0; color:#0f172a; font-weight:600;">Aarav S.</p>
+          <p style="margin:0; color:#334155;">“WeWork Medicals has transformed our workspace health services. Highly recommend!”</p>
+        </mat-card>
+        <mat-card style="flex:1 1 320px; min-width:280px; border:1px solid #e2e8f0; border-radius:12px; padding:18px;">
+          <p style="margin:0 0 8px 0; color:#0f172a; font-weight:600;">Meera K.</p>
+          <p style="margin:0; color:#334155;">“The mental health support has been invaluable for our team.”</p>
+        </mat-card>
+        <mat-card style="flex:1 1 320px; min-width:280px; border:1px solid #e2e8f0; border-radius:12px; padding:18px;">
+          <p style="margin:0 0 8px 0; color:#0f172a; font-weight:600;">Rahul T.</p>
+          <p style="margin:0; color:#334155;">“Responsive and professional service. Couldn't be happier!”</p>
+        </mat-card>
+      </div>
+    </div>
+  </section>
+
+  <footer style="background:#0f172a; color:#e2e8f0;">
+    <div style="max-width:1100px; margin:0 auto; padding:28px 16px; display:flex; flex-wrap:wrap; gap:24px; align-items:flex-start; justify-content:space-between;">
+      <div style="min-width:220px;">
+        <div style="font-weight:700; margin-bottom:6px;">WeWork Medicals</div>
+        <div style="font-size:13px; color:#94a3b8;">Your health partner in the coworking space.</div>
+      </div>
+      <div style="display:flex; gap:32px; flex-wrap:wrap;">
+        <div>
+          <div style="font-weight:600; margin-bottom:8px; color:#f1f5f9;">Product</div>
+          <a href="#services" (click)="$event.preventDefault(); scrollTo('services')" style="display:block; text-decoration:none; color:#cbd5e1; margin-bottom:6px;">Services</a>
+          <a href="#pricing" (click)="$event.preventDefault(); scrollTo('pricing')" style="display:block; text-decoration:none; color:#cbd5e1; margin-bottom:6px;">Pricing</a>
+          <a href="#testimonials" (click)="$event.preventDefault(); scrollTo('testimonials')" style="display:block; text-decoration:none; color:#cbd5e1;">Testimonials</a>
+        </div>
+        <div>
+          <div style="font-weight:600; margin-bottom:8px; color:#f1f5f9;">Company</div>
+          <a href="#" style="display:block; text-decoration:none; color:#cbd5e1; margin-bottom:6px;">About</a>
+          <a href="#" style="display:block; text-decoration:none; color:#cbd5e1; margin-bottom:6px;">Careers</a>
+          <a href="#" style="display:block; text-decoration:none; color:#cbd5e1;">Contact</a>
+        </div>
+        <div>
+          <div style="font-weight:600; margin-bottom:8px; color:#f1f5f9;">Legal</div>
+          <a href="#" style="display:block; text-decoration:none; color:#cbd5e1; margin-bottom:6px;">Privacy</a>
+          <a href="#" style="display:block; text-decoration:none; color:#cbd5e1;">Terms</a>
+        </div>
+      </div>
+    </div>
+    <mat-divider style="border-top-color:#1f2937;"></mat-divider>
+    <div style="max-width:1100px; margin:0 auto; padding:14px 16px; font-size:12px; color:#94a3b8;">
+      © 2025 WeWork Medicals. All rights reserved.
+    </div>
+  </footer>
+
+</div>
+
